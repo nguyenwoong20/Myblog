@@ -1,4 +1,53 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://nguyenwoong20.github.io/Myblog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Nguyenisrealll'
 theme = "hugo-theme-stack"
+
+[params]
+  mainSections = ["post"]
+
+  [params.sidebar]
+    emoji = "🎮"
+    subtitle = "Crafting games"
+    [params.sidebar.avatar]
+      enabled = true
+      local = false
+      src = "https://via.placeholder.com/300"
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/post/"
+    weight = 2
+    [menu.main.params]
+      icon = "messages"
+
+
+  [[menu.social]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/nguyenwoong20"
+    weight = 1
+    [menu.social.params]
+      icon = "brand-github"
+
+  [[menu.social]]
+    identifier = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/"
+    weight = 2
+    [menu.social.params]
+      icon = "brand-twitter"
+
+  [[menu.social]]
+    identifier = "youtube"
+    name = "YouTube"
+    url = "https://youtube.com/"
+    weight = 3
+    [menu.social.params]
+      icon = "brand-youtube"
