@@ -12,12 +12,24 @@ theme = "hugo-theme-stack"
     [params.sidebar.avatar]
       enabled = true
       local = false
-      src = "https://via.placeholder.com/300"
+      src = "img/avatar.png"
 
   [params.colorScheme]
     toggle = true
     default = "auto"
 
+[permalinks]
+  post = "/p/:slug/"
+  page = "/:slug/"
+
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+      icon = "home"
 
   [[menu.main]]
     identifier = "posts"
@@ -26,6 +38,38 @@ theme = "hugo-theme-stack"
     weight = 2
     [menu.main.params]
       icon = "messages"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+    [menu.main.params]
+      icon = "user"
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 4
+    [menu.main.params]
+      icon = "archives"
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 5
+    [menu.main.params]
+      icon = "search"
+
+  [[menu.main]]
+    identifier = "links"
+    name = "Links"
+    url = "/links/"
+    weight = 6
+    [menu.main.params]
+      icon = "link"
 
 
   [[menu.social]]
