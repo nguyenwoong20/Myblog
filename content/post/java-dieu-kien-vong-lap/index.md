@@ -1,5 +1,5 @@
 ---
-title: "Câu điều kiện & vòng lặp trong Java"
+title: "Bài 3 - Câu điều kiện & vòng lặp trong Java"
 date: 2025-09-22T12:10:00+07:00
 tags: ["java", "co-ban"]
 categories: ["Java"]

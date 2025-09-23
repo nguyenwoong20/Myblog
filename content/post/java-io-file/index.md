@@ -1,5 +1,5 @@
 ---
-title: "Đầu vào/đầu ra & xử lý file trong Java"
+title: "Bài 8 - Đầu vào/đầu ra & xử lý file trong Java"
 date: 2025-09-22T12:30:00+07:00
 tags: ["java", "io"]
 categories: ["Java"]
@@ -65,7 +65,7 @@ try {
 
 ---
 
-Trước đó: [Bài 8 – Exception](/p/java-exception/)
+Trước đó: [Bài 7 – Exception](/p/java-exception/)
 
-Xem thêm: [Bài 9 – Stream API](/p/java-stream-api/)
+Tiếp theo: [Bài 9 – Stream API](/p/java-stream-api/)
 

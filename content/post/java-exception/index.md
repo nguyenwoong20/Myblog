@@ -1,5 +1,5 @@
 ---
-title: "Java Exception: try-catch, throw, custom exception"
+title: "Bài 7 - Java Exception: try-catch, throw, custom exception"
 date: 2025-09-22T11:10:00+07:00
 tags: ["java", "exception"]
 categories: ["Java"]
@@ -63,7 +63,7 @@ void register(int age) throws InvalidAgeException {
 
 ---
 
-Trước đó: [Bài 7 – Kế thừa, đóng gói, đa hình](/p/java-lop-doi-tuong/)
+Trước đó: [Bài 6 – Lớp & đối tượng (OOP)](/p/java-lop-doi-tuong/)
 
-Tiếp theo: [Bài 9 – I/O & Stream](/p/java-io-file/)
+Tiếp theo: [Bài 8 – I/O & xử lý file](/p/java-io-file/)
 

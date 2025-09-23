@@ -1,8 +1,9 @@
 ---
-title: "Java Stream API: map, filter, reduce"
+title: "Bài 9 - Java Stream API: map, filter, reduce"
 date: 2025-09-22T11:00:00+07:00
 tags: ["java", "stream"]
 categories: ["Java"]
+series: ["Java cơ bản"]
 draft: false
 ---
 
@@ -58,4 +59,8 @@ int sumStream = nums.stream().mapToInt(Integer::intValue).sum();
 ## 7) Lưu ý hiệu năng
 - Stream phù hợp thao tác khai báo, ngắn gọn; vòng lặp truyền thống vẫn tốt cho hotspot đơn giản.
 - Tránh tạo stream mới trong vòng lặp lớn.
+
+---
+
+Trước đó: [Bài 8 – I/O & xử lý file](/p/java-io-file/)
 
