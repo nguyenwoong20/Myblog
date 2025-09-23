@@ -6,6 +6,10 @@ theme = "hugo-theme-stack"
 [params]
   mainSections = ["post"]
 
+  [params.article]
+    toc = true
+    readingTime = true
+
   [params.sidebar]
     emoji = "🎮"
     subtitle = "Crafting games"
@@ -21,6 +25,9 @@ theme = "hugo-theme-stack"
 [permalinks]
   post = "/p/:slug/"
   page = "/:slug/"
+
+[taxonomies]
+  series = "series"
 
 
   [[menu.main]]
