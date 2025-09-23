@@ -1,5 +1,5 @@
 ---
-title: "Java Collections: List, Set, Map"
+title: "Bài 4 - Java Collections: List, Set, Map"
 date: 2025-09-22T10:20:00+07:00
 tags: ["java", "collections"]
 categories: ["Java"]

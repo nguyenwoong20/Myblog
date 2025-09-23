@@ -1,5 +1,5 @@
 ---
-title: "Hàm & phương thức trong Java"
+title: "Bài 5 - Hàm & phương thức trong Java"
 date: 2025-09-22T12:20:00+07:00
 tags: ["java", "co-ban"]
 categories: ["Java"]

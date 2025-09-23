@@ -1,5 +1,5 @@
 ---
-title: "Java cơ bản: Biến, Kiểu dữ liệu, Toán tử"
+title: "Bài 2 - Java cơ bản: Biến, Kiểu dữ liệu, Toán tử"
 date: 2025-09-22T10:00:00+07:00
 tags: ["java", "co-ban"]
 categories: ["Java"]

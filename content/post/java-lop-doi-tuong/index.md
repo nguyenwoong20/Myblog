@@ -1,5 +1,5 @@
 ---
-title: "Java OOP: Lớp, Đối tượng, Kế thừa, Đa hình"
+title: "Bài 6 - Java OOP: Lớp, Đối tượng, Kế thừa, Đa hình"
 date: 2025-09-22T10:10:00+07:00
 tags: ["java", "oop"]
 categories: ["Java"]
@@ -97,5 +97,5 @@ class Bird implements Flyable {
 
 Trước đó: [Bài 5 – Hàm & phương thức](/p/java-ham-phuong-thuc/)
 
-Tiếp theo: [Bài 7 – Kế thừa, đóng gói, đa hình](/p/java-lop-doi-tuong/)
+Tiếp theo: [Bài 7 – Exception](/p/java-exception/)
 
