@@ -1,8 +1,8 @@
 ---
 title: "Bài 2 - Java cơ bản: Biến, Kiểu dữ liệu, Toán tử"
 date: 2025-09-22T10:00:00+07:00
-tags: ["java", "co-ban"]
-categories: ["Java"]
+categories: ["Java", "Java Cơ bản"]
+slug: "java_bai2"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -100,7 +100,7 @@ public class IOExample {
 
 ---
 
-Trước đó: [Bài 1 – Giới thiệu & Hello World](/p/java-gioi-thieu-hello-world/)
+Trước đó: [Bài 1 – Giới thiệu & Hello World](/Myblog/p/java_bai1/)
 
-Tiếp theo: [Bài 3 – Điều kiện & vòng lặp](/p/java-dieu-kien-vong-lap/)
+Tiếp theo: [Bài 3 – Điều kiện & vòng lặp](/Myblog/p/java_bai3/)
 

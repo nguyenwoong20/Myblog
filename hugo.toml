@@ -28,6 +28,8 @@ theme = "hugo-theme-stack"
 
 [taxonomies]
   series = "series"
+  category = "categories"
+  tag = "tags"
 
 
   [[menu.main]]

@@ -1,8 +1,8 @@
 ---
 title: "Bài 1 - Giới thiệu Java & môi trường lập trình (Hello World)"
 date: 2025-09-22T12:00:00+07:00
-tags: ["java", "co-ban"]
-categories: ["Java"]
+categories: ["Java", "Java Cơ bản"]
+slug: "java_bai1"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -35,7 +35,7 @@ public class Hello {
 ## 4) Cấu trúc dự án tối giản
 - `src/main/java` chứa mã nguồn, `src/test/java` cho kiểm thử.
 
----
 
-Tiếp theo: [Bài 2 – Biến & kiểu dữ liệu](/p/java-co-ban/)
+Tiếp theo: [Bài 2 – Biến & kiểu dữ liệu](/Myblog/p/java_bai2/)
+
 

@@ -1,8 +1,8 @@
 ---
 title: "Bài 8 - Đầu vào/đầu ra & xử lý file trong Java"
 date: 2025-09-22T12:30:00+07:00
-tags: ["java", "io"]
-categories: ["Java"]
+categories: ["Java", "Java Nâng Cao"]
+slug: "java_bai8"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -65,7 +65,7 @@ try {
 
 ---
 
-Trước đó: [Bài 7 – Exception](/p/java-exception/)
+Trước đó: [Bài 7 – Exception](/Myblog/p/java_bai7/)
 
-Tiếp theo: [Bài 9 – Stream API](/p/java-stream-api/)
+Tiếp theo: [Bài 9 – Stream API](/Myblog/p/java_bai9/)
 

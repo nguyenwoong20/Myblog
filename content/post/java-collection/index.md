@@ -1,8 +1,8 @@
 ---
 title: "Bài 4 - Java Collections: List, Set, Map"
 date: 2025-09-22T10:20:00+07:00
-tags: ["java", "collections"]
-categories: ["Java"]
+categories: ["Java", "Java Cơ bản"]
+slug: "java_bai4"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -69,7 +69,7 @@ long countA = list.stream().filter(x -> x.equals("A")).count();
 
 ---
 
-Trước đó: [Bài 3 – Điều kiện & vòng lặp](/p/java-dieu-kien-vong-lap/)
+Trước đó: [Bài 3 – Điều kiện & vòng lặp](/Myblog/p/java_bai3/)
 
-Tiếp theo: [Bài 5 – Hàm & phương thức](/p/java-ham-phuong-thuc/)
+Tiếp theo: [Bài 5 – Hàm & phương thức](/Myblog/p/java_bai5/)
 

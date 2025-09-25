@@ -1,8 +1,8 @@
 ---
 title: "Bài 7 - Java Exception: try-catch, throw, custom exception"
 date: 2025-09-22T11:10:00+07:00
-tags: ["java", "exception"]
-categories: ["Java"]
+categories: ["Java", "Java Nâng Cao"]
+slug: "java_bai7"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -63,7 +63,7 @@ void register(int age) throws InvalidAgeException {
 
 ---
 
-Trước đó: [Bài 6 – Lớp & đối tượng (OOP)](/p/java-lop-doi-tuong/)
+Trước đó: [Bài 6 – Lớp & đối tượng (OOP)](/Myblog/p/java_bai6/)
 
-Tiếp theo: [Bài 8 – I/O & xử lý file](/p/java-io-file/)
+Tiếp theo: [Bài 8 – I/O & xử lý file](/Myblog/p/java_bai8/)
 

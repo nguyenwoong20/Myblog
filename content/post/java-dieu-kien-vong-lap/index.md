@@ -1,8 +1,8 @@
 ---
 title: "Bài 3 - Câu điều kiện & vòng lặp trong Java"
 date: 2025-09-22T12:10:00+07:00
-tags: ["java", "co-ban"]
-categories: ["Java"]
+categories: ["Java", "Java Cơ bản"]
+slug: "java_bai3"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -59,7 +59,7 @@ for (int i = 0; i < 3; i++) {
 
 ---
 
-Trước đó: [Bài 2 – Biến & kiểu dữ liệu](/p/java-co-ban/)
+Trước đó: [Bài 2 – Biến & kiểu dữ liệu](/Myblog/p/java_bai2/)
 
-Tiếp theo: [Bài 4 – Mảng & Collections cơ bản](/p/java-collection/)
+Tiếp theo: [Bài 4 – Mảng & Collections cơ bản](/Myblog/p/java_bai4/)
 
