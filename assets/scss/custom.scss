@@ -1,0 +1,17 @@
+// Custom styles
+
+// Add spacing between title and categories
+.article-title-wrapper {
+    margin-bottom: 15px;
+}
+
+// Style for categories
+.article-category {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+// Hide any tag elements that might be displayed by the theme
+.article-tags {
+    display: none !important;
+}

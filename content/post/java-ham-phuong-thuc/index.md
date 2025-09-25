@@ -1,8 +1,8 @@
 ---
 title: "Bài 5 - Hàm & phương thức trong Java"
 date: 2025-09-22T12:20:00+07:00
-tags: ["java", "co-ban"]
-categories: ["Java"]
+categories: ["Java", "Java Cơ bản"]
+slug: "java_bai5"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -53,7 +53,7 @@ class Counter {
 
 ---
 
-Trước đó: [Bài 4 – Collections cơ bản](/p/java-collection/)
+Trước đó: [Bài 4 – Collections cơ bản](/Myblog/p/java_bai4/)
 
-Tiếp theo: [Bài 6 – Lớp & đối tượng (OOP)](/p/java-lop-doi-tuong/)
+Tiếp theo: [Bài 6 – Lớp & đối tượng (OOP)](/Myblog/p/java_bai6/)
 

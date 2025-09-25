@@ -1,8 +1,8 @@
 ---
 title: "Bài 9 - Java Stream API: map, filter, reduce"
 date: 2025-09-22T11:00:00+07:00
-tags: ["java", "stream"]
-categories: ["Java"]
+categories: ["Java", "Java Nâng Cao"]
+slug: "java_bai9"
 series: ["Java cơ bản"]
 draft: false
 ---
@@ -62,5 +62,5 @@ int sumStream = nums.stream().mapToInt(Integer::intValue).sum();
 
 ---
 
-Trước đó: [Bài 8 – I/O & xử lý file](/p/java-io-file/)
+Trước đó: [Bài 8 – I/O & xử lý file](/Myblog/p/java_bai8/)
 
