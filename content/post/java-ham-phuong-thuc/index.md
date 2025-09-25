@@ -1,6 +1,6 @@
 ---
 title: "Bài 5 - Hàm & phương thức trong Java"
-date: 2025-09-22T12:20:00+07:00
+date: 2025-09-22T13:00:00+07:00
 categories: ["Java", "Java Cơ bản"]
 slug: "java_bai5"
 series: ["Java cơ bản"]

@@ -1,6 +1,6 @@
 ---
 title: "Bài 8 - Đầu vào/đầu ra & xử lý file trong Java"
-date: 2025-09-22T12:30:00+07:00
+date: 2025-09-22T16:00:00+07:00
 categories: ["Java", "Java Nâng Cao"]
 slug: "java_bai8"
 series: ["Java cơ bản"]

@@ -19,11 +19,12 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
     readingTime = true
 
   [params.sidebar]
+    compact = false
     emoji = "🎮"
     subtitle = "Crafting games"
     [params.sidebar.avatar]
       enabled = true
-      local = false
+      local = true
       src = "img/avatar.png"
 
   [params.colorScheme]

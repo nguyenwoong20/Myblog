@@ -1,6 +1,6 @@
 ---
 title: "Bài 7 - Java Exception: try-catch, throw, custom exception"
-date: 2025-09-22T11:10:00+07:00
+date: 2025-09-22T15:00:00+07:00
 categories: ["Java", "Java Nâng Cao"]
 slug: "java_bai7"
 series: ["Java cơ bản"]

@@ -1,6 +1,6 @@
 ---
 title: "Bài 9 - Java Stream API: map, filter, reduce"
-date: 2025-09-22T11:00:00+07:00
+date: 2025-09-22T17:00:00+07:00
 categories: ["Java", "Java Nâng Cao"]
 slug: "java_bai9"
 series: ["Java cơ bản"]
