@@ -1,6 +1,6 @@
 ---
 title: "Bài 1 - Giới thiệu Java & môi trường lập trình (Hello World)"
-date: 2025-09-22T12:00:00+07:00
+date: 2025-09-22T09:00:00+07:00
 categories: ["Java", "Java Cơ bản"]
 slug: "java_bai1"
 series: ["Java cơ bản"]

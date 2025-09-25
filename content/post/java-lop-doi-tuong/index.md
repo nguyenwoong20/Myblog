@@ -1,6 +1,6 @@
 ---
 title: "Bài 6 - Java OOP: Lớp, Đối tượng, Kế thừa, Đa hình"
-date: 2025-09-22T10:10:00+07:00
+date: 2025-09-22T14:00:00+07:00
 categories: ["Java", "Java Nâng Cao"]
 slug: "java_bai6"
 series: ["Java cơ bản"]

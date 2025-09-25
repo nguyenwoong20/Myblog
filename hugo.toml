@@ -3,6 +3,14 @@ languageCode = 'en-us'
 title = 'Nguyenisrealll'
 theme = "hugo-theme-stack"
 
+# Suppress HTML warnings
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Suppress specific warnings
+ignoreErrors = ["error-remote-getjson"]
+ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and "twitter_simple" shortcodes were deprecated', 'WARN .* The "gist" shortcode was deprecated']
+
 [params]
   mainSections = ["post"]
 
@@ -11,11 +19,12 @@ theme = "hugo-theme-stack"
     readingTime = true
 
   [params.sidebar]
+    compact = false
     emoji = "🎮"
     subtitle = "Crafting games"
     [params.sidebar.avatar]
       enabled = true
-      local = false
+      local = true
       src = "img/avatar.png"
 
   [params.colorScheme]

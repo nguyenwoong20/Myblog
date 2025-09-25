@@ -1,6 +1,6 @@
 ---
 title: "Bài 3 - Câu điều kiện & vòng lặp trong Java"
-date: 2025-09-22T12:10:00+07:00
+date: 2025-09-22T11:00:00+07:00
 categories: ["Java", "Java Cơ bản"]
 slug: "java_bai3"
 series: ["Java cơ bản"]
