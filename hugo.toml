@@ -21,7 +21,7 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
     longBio = "Tôi là một lập trình viên Fullstack giàu kinh nghiệm và đầy đam mê, chuyên xây dựng các giải pháp số có tính mở rộng và hiệu quả cao. Ở mảng frontend, tôi sử dụng Next.js, TypeScript và Tailwind CSS để tạo ra các giao diện UI/UX thân thiện, linh hoạt và dễ tiếp cận. Ở mảng backend, tôi phát triển các hệ thống mạnh mẽ bằng C#, Java cùng với các cơ sở dữ liệu như MySQL, MongoDB và SQL Server. Tôi cũng yêu thích việc phát triển ứng dụng di động bằng Android Studio và xây dựng trò chơi tương tác với Unity. Tôi là một kỹ sư có tinh thần hợp tác, cầu tiến, chú trọng chi tiết và luôn cam kết mang đến những ứng dụng có cấu trúc tốt, hiệu năng cao và trải nghiệm người dùng vượt trội trên nhiều nền tảng."
     location = "Vietnam 🇻🇳"
     avatar = "/img/avatar.png"
-    email = "nguyenisrealll@example.com"
+    email = "nguyenwoong20@gmail.com"
     
   [params.article]
     toc = true
@@ -30,7 +30,7 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
   [params.sidebar]
     compact = false
     emoji = "🎮"
-    subtitle = "Crafting games"
+    subtitle = "nguyenwoong20"
     [params.sidebar.avatar]
       enabled = true
       local = true
@@ -108,16 +108,16 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
       icon = "brand-github"
 
   [[menu.social]]
-    identifier = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/"
+    identifier = "linkedin"
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/nguyen-woong-3961a8389/"
     weight = 2
     [menu.social.params]
-      icon = "brand-twitter"
+      icon = "link"
 
   [[menu.social]]
-    identifier = "youtube"
-    name = "YouTube"
+    identifier = "Mail"
+    name = "Mail"
     url = "https://youtube.com/"
     weight = 3
     [menu.social.params]
