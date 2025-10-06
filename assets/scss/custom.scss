@@ -15,3 +15,114 @@
 .article-tags {
     display: none !important;
 }
+
+// Education Card Styles
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    background: var(--card-background);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+
+    &:hover {
+        box-shadow: 0 8px 25px -3px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+}
+
+.education-logo {
+    flex-shrink: 0;
+    
+    img {
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+        object-fit: contain;
+        background: #fff;
+        padding: 15px;
+        border: 2px solid #e5e7eb;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.education-content {
+    flex: 1;
+    
+    .university-name {
+        margin: 0 0 0.75rem 0;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+        
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .degree {
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: var(--body-text-color);
+    }
+    
+    .field {
+        color: var(--body-text-color-secondary);
+        margin-bottom: 1rem;
+        font-style: italic;
+        font-size: 1.1rem;
+    }
+    
+    .education-meta {
+        display: flex;
+        gap: 1rem;
+        font-size: 1rem;
+        color: var(--body-text-color-secondary);
+        
+        .duration, .location {
+            display: flex;
+            align-items: center;
+            
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                background: var(--accent-color);
+                border-radius: 50%;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+// Signature styling
+.signature img, p img[alt*="Signature"], .signature-img {
+    max-width: 80px;
+    height: auto;
+    margin: 0.5rem 0;
+    display: inline-block;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        
+        .education-logo img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

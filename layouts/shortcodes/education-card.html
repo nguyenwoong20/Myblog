@@ -1,0 +1,19 @@
+{{/* Education Card Shortcode */}}
+<div class="education-card">
+    <div class="education-logo">
+        <img src="{{ (.Get "logo") | relURL }}" alt="{{ .Get "university" }}" />
+    </div>
+    <div class="education-content">
+        <h3 class="university-name">
+            <a href="{{ .Get "link" }}" target="_blank" rel="noopener">
+                {{ .Get "university" }}
+            </a>
+        </h3>
+        <div class="degree">{{ .Get "degree" }}</div>
+        <div class="field">{{ .Get "field" }}</div>
+        <div class="education-meta">
+            <span class="duration">{{ .Get "duration" }}</span>
+            <span class="location">{{ .Get "location" }}</span>
+        </div>
+    </div>
+</div>
