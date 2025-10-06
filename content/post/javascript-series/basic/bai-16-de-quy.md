@@ -14,7 +14,7 @@ summary: "Tìm hiểu Đệ quy - Kỹ thuật giải quyết vấn đề bằng
 
 ## 🎥 Video hướng dẫn chi tiết
 **Nguồn:** [Khóa học JavaScript - Kteam](https://www.youtube.com/playlist?list=PL33lvabfss1ywJRoh40x9fmAfgbI1hpVX)
-{{< youtube LteNqj4DFD8 >}}
+{{< youtube 6yxtJRzx7Qs >}}
 
 ---
 
