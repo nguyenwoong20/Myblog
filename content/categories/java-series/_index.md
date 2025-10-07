@@ -1,6 +1,11 @@
 ---
 title: "Java Series"
-description: "Complete Java programming tutorials from basics to advanced concepts"
+description: "Các hướng dẫn lập trình Java toàn diện — từ cơ bản đến các khái niệm nâng cao."
+slug: "java-series"
+image: "java2.jpg"
+style:
+    background: "#9cf68fff"
+    color: "#fff"
 ---
 
 # Java Series

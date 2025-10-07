@@ -1,6 +1,11 @@
 ---
 title: "Backend Development"
 description: "Database design, API development, and backend architecture patterns"
+slug: "backend-development"
+image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+style:
+    background: "#68a063"
+    color: "#fff"
 ---
 
 # Backend Development Series

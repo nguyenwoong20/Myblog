@@ -109,16 +109,16 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
 
   [[menu.social]]
     identifier = "linkedin"
-    name = "linkedin"
+    name = "LinkedIn"
     url = "https://www.linkedin.com/in/nguyen-woong-3961a8389/"
     weight = 2
     [menu.social.params]
-      icon = "link"
+      icon = "brand-linkedin"
 
   [[menu.social]]
     identifier = "Mail"
     name = "Mail"
-    url = "https://youtube.com/"
+    url = "mailto:nguyenwoong20@gmail.com"
     weight = 3
     [menu.social.params]
-      icon = "brand-youtube"
+      icon = "mail"
