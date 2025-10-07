@@ -1,6 +1,11 @@
 ---
 title: "Web Development"
 description: "Complete web development tutorials including HTML5, CSS3, and modern frameworks"
+slug: "web-development"
+image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+style:
+    background: "#e34c26"
+    color: "#fff"
 ---
 
 # Web Development Series

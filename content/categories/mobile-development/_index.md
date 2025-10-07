@@ -1,6 +1,11 @@
 ---
 title: "Mobile Development"
 description: "Mobile app development tutorials for Android, iOS, and cross-platform solutions"
+slug: "mobile-development"
+image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+style:
+    background: "#3ddc84"
+    color: "#fff"
 ---
 
 # Mobile Development Series

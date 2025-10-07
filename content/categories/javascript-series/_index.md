@@ -1,6 +1,11 @@
 ---
 title: "JavaScript Series"
-description: "Modern JavaScript tutorials covering ES6+, async programming, and frontend frameworks"
+description: "Các hướng dẫn JavaScript hiện đại bao gồm ES6+, lập trình bất đồng bộ và các framework giao diện người dùng"
+slug: "javascript-series"
+image: "JS.jpg"
+style:
+    background: "#f7df1e"
+    color: "#000"
 ---
 
 # JavaScript Series
