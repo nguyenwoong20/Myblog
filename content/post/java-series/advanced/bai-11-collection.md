@@ -110,4 +110,4 @@ int index = fruits.indexOf("Apple");
 - HashMap: Tìm kiếm key nhanh O(1)
 - TreeMap: Tìm kiếm key O(log n), key tự sắp xếp
 
-## Tiếp theo: [Override và Overload trong Java](/Myblog/p/java_override_overload/)
+## Tiếp theo: [Override và Overload trong Java](/p/java_override_overload/)

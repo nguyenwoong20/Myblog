@@ -75,4 +75,4 @@ public interface Vehicle {
 }
 ```
 
-## Tiếp theo: [Xử lý ngoại lệ trong Java](/Myblog/p/java_exception/)
+## Tiếp theo: [Xử lý ngoại lệ trong Java](/p/java_exception/)

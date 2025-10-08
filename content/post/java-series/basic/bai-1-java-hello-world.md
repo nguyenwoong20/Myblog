@@ -67,4 +67,4 @@ Hello, Java!
 
 - Việc xây dựng dự án Java và chạy mã nguồn đơn giản giúp mình tự tin bắt đầu học các phần tiếp theo.
 
-## Tiếp theo: [Bài 2 – boolean](/Myblog/p/java_bai2_boolean/)
+## Tiếp theo: [Bài 2 – boolean](/p/java_bai2_boolean/)

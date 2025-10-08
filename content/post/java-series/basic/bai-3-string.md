@@ -80,4 +80,4 @@ System.out.println(a.equalsIgnoreCase(b)); // true
 
 - Biết cách dùng method hữu ích của String giúp làm việc nhanh hơn và tránh bug khó đoán lúc kiểm tra điều kiện hoặc nhập xuất.
 
-## Tiếp theo: [Bài 4 – Array & List](/Myblog/p/java_bai4/)
+## Tiếp theo: [Bài 4 – Array & List](/p/java_bai4/)

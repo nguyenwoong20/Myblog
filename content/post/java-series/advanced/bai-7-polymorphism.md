@@ -150,4 +150,4 @@ if (obj instanceof Dog) {
 - Kết hợp với interface tạo code loosely coupled
 - Cẩn thận với downcasting để tránh lỗi runtime
 
-## Tiếp theo: [Abstract Class trong Java](/Myblog/p/java_abstract_class/)
+## Tiếp theo: [Abstract Class trong Java](/p/java_abstract_class/)

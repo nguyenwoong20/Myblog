@@ -130,4 +130,4 @@ Class con phải có thể thay thế class cha mà không gây lỗi.
 - Ưu tiên composition trong nhiều trường hợp
 - Tuân thủ SOLID principles khi thiết kế kế thừa
 
-## Tiếp theo: [Tính Đóng Gói trong Java](/Myblog/p/java_encapsulation/)
+## Tiếp theo: [Tính Đóng Gói trong Java](/p/java_encapsulation/)

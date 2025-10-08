@@ -24,7 +24,7 @@ Kinh nghiệm học tập và thực hành của tôi đã giúp tôi rèn luy�
 
 Best regards,  
 
-<img src="/Myblog/images/signature/signn.png" alt="Nguyen Signature" style="max-width: 150px; height: auto; display: block; margin: 10px 0 10px -20px;" />
+{{< signature src="images/signature/signn.png" alt="Nguyen Signature" >}}
 
 <div style="margin: 30px 0; width: 100%;">
   <div style="border-top: 1px dashed #000000ff; margin: 5px 0;"></div>

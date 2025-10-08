@@ -97,4 +97,4 @@ public class OuterClass {
 - Method chaining với `this` giúp code ngắn gọn, dễ đọc
 - Hiểu về `this` là nền tảng cho nhiều design pattern
 
-## Tiếp theo: [Từ khóa SUPER trong Java](/Myblog/p/java_super/)
+## Tiếp theo: [Từ khóa SUPER trong Java](/p/java_super/)

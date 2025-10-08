@@ -73,4 +73,4 @@ for (String item : list) {
 
 - Biết kết hợp duyệt mảng, thao tác cơ bản sẽ cực kỳ thuận lợi cho các bài toán lớn hơn.
 
-## Tiếp theo: [Bài 7 – HashMap & Set](/Myblog/p/java_bai7_mapset/)
+## Tiếp theo: [Bài 7 – HashMap & Set](/p/java_bai7_mapset/)

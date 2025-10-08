@@ -109,4 +109,4 @@ class Dog extends Animal {
 - Copy constructor an toàn khi cần nhân bản đối tượng
 - Private constructor là kỹ thuật quan trọng trong design pattern
 
-## Tiếp theo: [Từ khóa this trong Java](/Myblog/p/java_this/)
+## Tiếp theo: [Từ khóa this trong Java](/p/java_this/)

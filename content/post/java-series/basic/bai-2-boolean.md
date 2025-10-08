@@ -93,4 +93,4 @@ System.out.println("Đủ tuổi trưởng thành: " + isAdult);
 - boolean giúp code dễ đọc, dễ hiểu
 - Nên đặt tên biến boolean bắt đầu bằng is/has/can
 
-## Tiếp theo: [Bài 3 – Biến số](/Myblog/p/java_bai3/)
+## Tiếp theo: [Bài 3 – Biến số](/p/java_bai3/)

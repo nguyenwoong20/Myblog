@@ -62,4 +62,4 @@ for (int k = 0; k < 10; k++) {
 
 - Khi học thao tác vòng lặp, đừng quên điều kiện dừng để tránh lỗi infinite loop!
 
-## Tiếp theo: [Bài 6 – Mảng & ArrayList](/Myblog/p/java_bai6_array/)
+## Tiếp theo: [Bài 6 – Mảng & ArrayList](/p/java_bai6_array/)

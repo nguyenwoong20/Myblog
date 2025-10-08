@@ -181,4 +181,4 @@ public abstract class Logger {
 - Kết hợp tốt với Template Method Pattern
 - Cần cân nhắc giữa abstract class và interface
 
-## Tiếp theo: [Interface trong Java](/Myblog/p/java_interface/)
+## Tiếp theo: [Interface trong Java](/p/java_interface/)

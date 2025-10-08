@@ -164,4 +164,4 @@ public final class ImmutablePoint {
 - Luôn cân nhắc access level phù hợp cho từng thành phần
 - Getter/Setter không chỉ là boilerplate code mà còn là cơ chế bảo vệ dữ liệu
 
-## Tiếp theo: [Tính Đa Hình trong Java](/Myblog/p/java_polymorphism/)
+## Tiếp theo: [Tính Đa Hình trong Java](/p/java_polymorphism/)

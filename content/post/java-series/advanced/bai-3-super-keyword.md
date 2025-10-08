@@ -123,4 +123,4 @@ class Dog extends Animal {
 - Giúp tận dụng code của lớp cha một cách hiệu quả
 - Cần hiểu rõ để tránh lỗi khi override
 
-## Tiếp theo: [Lập trình hướng đối tượng trong Java](/Myblog/p/java_oop/)
+## Tiếp theo: [Lập trình hướng đối tượng trong Java](/p/java_oop/)

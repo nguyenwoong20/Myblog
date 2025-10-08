@@ -50,4 +50,4 @@ Dùng Wrapper khi làm việc với collections/ArrayList (chỉ nhận object).
 
 - Wrapper class cực kỳ hữu ích khi thao tác collection, sử dụng phương thức tiện ích của lớp đối tượng.
 
-## Tiếp theo: [Bài 9 – Exception Handling](/Myblog/p/java_bai9/)
+## Tiếp theo: [Bài 9 – Exception Handling](/p/java_bai9/)

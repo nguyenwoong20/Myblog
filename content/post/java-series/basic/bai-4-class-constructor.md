@@ -93,4 +93,4 @@ public Student(String name) {
 
 - Class, constructor và kỹ năng dùng this chuẩn xác là chìa khoá lập trình OOP Java hiệu quả.
 
-## Tiếp theo: [Bài 5 – Điều kiện & vòng lặp](/Myblog/p/java_bai5_control/)
+## Tiếp theo: [Bài 5 – Điều kiện & vòng lặp](/p/java_bai5_control/)

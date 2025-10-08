@@ -1,4 +1,4 @@
-baseURL = 'https://nguyenwoong20.github.io/Myblog/'
+baseURL = 'https://nguyenwoong20.github.io/MyPortfolio/'
 languageCode = 'en-us'
 title = 'Woong Ho Tuan Nguyen'
 theme = "hugo-theme-stack"

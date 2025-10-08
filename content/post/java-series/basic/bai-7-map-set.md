@@ -49,4 +49,4 @@ System.out.println(set.size()); // 2
 
 - Lưu ý: Khi thao tác với Map/Set nên thử in ra nhiều trường hợp edge case!
 
-## Tiếp theo: [Bài 8 – Enum và Wrapper Class](/Myblog/p/java_bai8_enum/)
+## Tiếp theo: [Bài 8 – Enum và Wrapper Class](/p/java_bai8_enum/)
