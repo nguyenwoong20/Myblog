@@ -50,6 +50,12 @@
     }
 }
 
+// Fix avatar image display to prevent distortion
+.sidebar header .site-avatar .site-logo {
+    object-fit: cover;
+    object-position: center;
+}
+
 .education-content {
     flex: 1;
     

@@ -1,6 +1,6 @@
 baseURL = 'https://nguyenwoong20.github.io/Myblog/'
 languageCode = 'en-us'
-title = 'Nguyenisrealll'
+title = 'Woong Ho Tuan Nguyen'
 theme = "hugo-theme-stack"
 
 # Suppress HTML warnings
@@ -15,12 +15,12 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
   mainSections = ["post"]
 
   [params.author]
-    name = "Nguyenisrealll"
+    name = "Nguyen"
     description = "Fullstack Developer from Vietnam 🇻🇳"
     bio = "Passionate about building scalable and efficient digital solutions. I work with modern web technologies to create amazing user experiences."
-    longBio = "Tôi là một lập trình viên Fullstack giàu kinh nghiệm và đầy đam mê, chuyên xây dựng các giải pháp số có tính mở rộng và hiệu quả cao. Ở mảng frontend, tôi sử dụng Next.js, TypeScript và Tailwind CSS để tạo ra các giao diện UI/UX thân thiện, linh hoạt và dễ tiếp cận. Ở mảng backend, tôi phát triển các hệ thống mạnh mẽ bằng C#, Java cùng với các cơ sở dữ liệu như MySQL, MongoDB và SQL Server. Tôi cũng yêu thích việc phát triển ứng dụng di động bằng Android Studio và xây dựng trò chơi tương tác với Unity. Tôi là một kỹ sư có tinh thần hợp tác, cầu tiến, chú trọng chi tiết và luôn cam kết mang đến những ứng dụng có cấu trúc tốt, hiệu năng cao và trải nghiệm người dùng vượt trội trên nhiều nền tảng."
+    longBio = "Tôi là một lập trình viên Fullstack giàu kinh nghiệm và đầy đam mê, chuyên xây dựng các giải pháp số có tính mở rộng và hiệu quả cao. Ở mảng frontend, tôi sử dụng Next.js, TypeScript và Tailwind CSS để tạo ra các giao diện UI/UX thân thiện, linh hoạt và dễ tiếp cận. Ở mảng backend, tôi phát triển các hệ thống mạnh mẽ bằng C#, Java cùng với các cơ sở dữ liệu như MySQL, MongoDB và SQL Server. Tôi cũng yêu thích việc phát triển ứng dụng di động bằng Android Studio và xây dựng trò chơi tương tác bằng Unity. Tôi là một kỹ sư có tinh thần hợp tác, cầu tiến, chú trọng chi tiết và luôn cam kết mang đến những sản phẩm có cấu trúc tốt, hiệu năng cao và trải nghiệm người dùng vượt trội trên nhiều nền tảng."
     location = "Vietnam 🇻🇳"
-    avatar = "/img/avatar.png"
+    avatar = "img/avatar2.png"
     email = "nguyenwoong20@gmail.com"
     
   [params.article]
@@ -29,12 +29,12 @@ ignoreLogs = ['warning-goldmark-raw-html', 'WARN .* The "twitter", "tweet", and 
 
   [params.sidebar]
     compact = false
-    emoji = "🎮"
-    subtitle = "nguyenwoong20"
+    emoji = "🍀"
+    subtitle = "@nguyenwoong20"
     [params.sidebar.avatar]
       enabled = true
       local = true
-      src = "img/avatar.png"
+      src = "img/avatar2.png"
 
   [params.colorScheme]
     toggle = true
