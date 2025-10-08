@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Tìm hiểu về vòng lặp while và do-while - Cách lặp code khi điều kiện còn đúng">
+<title>Bài 12 - Vòng Lặp While - Lặp Khi Điều Kiện Đúng</title>
+
+<link rel='canonical' href='https://nguyenwoong20.github.io/MyPortfolio/p/b%C3%A0i-12-v%C3%B2ng-l%E1%BA%B7p-while-l%E1%BA%B7p-khi-%C4%91i%E1%BB%81u-ki%E1%BB%87n-%C4%91%C3%BAng/'>
+
+<link rel="stylesheet" href="/MyPortfolio/scss/style.min.5ce31a95bd07c16a43f90312c3778c1c3c4fd76a2f4ab4e4a9a319399c903666.css"><meta property='og:title' content="Bài 12 - Vòng Lặp While - Lặp Khi Điều Kiện Đúng">
+<meta property='og:description' content="Tìm hiểu về vòng lặp while và do-while - Cách lặp code khi điều kiện còn đúng">
+<meta property='og:url' content='https://nguyenwoong20.github.io/MyPortfolio/p/b%C3%A0i-12-v%C3%B2ng-l%E1%BA%B7p-while-l%E1%BA%B7p-khi-%C4%91i%E1%BB%81u-ki%E1%BB%87n-%C4%91%C3%BAng/'>
+<meta property='og:site_name' content='Woong Ho Tuan Nguyen'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='javascript-basic' /><meta property='article:tag' content='while-loop' /><meta property='article:tag' content='do-while' /><meta property='article:tag' content='loops' /><meta property='article:published_time' content='2025-09-28T14:30:00&#43;07:00'/><meta property='article:modified_time' content='2025-09-28T14:30:00&#43;07:00'/><meta property='og:image' content='https://img.youtube.com/vi/E4sUJ4LvYY0/maxresdefault.jpg' />
+<meta name="twitter:title" content="Bài 12 - Vòng Lặp While - Lặp Khi Điều Kiện Đúng">
+<meta name="twitter:description" content="Tìm hiểu về vòng lặp while và do-while - Cách lặp code khi điều kiện còn đúng"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://img.youtube.com/vi/E4sUJ4LvYY0/maxresdefault.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/MyPortfolio/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/MyPortfolio/img/avatar2_hu_24af44b6bccc68f9.png" width="300"
+                            height="411" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/MyPortfolio">Woong Ho Tuan Nguyen</a></h1>
+            <h2 class="site-description">@nguyenwoong20</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/nguyenwoong20'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/nguyen-woong-3961a8389/'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:nguyenwoong20@gmail.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/MyPortfolio/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/post/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/MyPortfolio/p/b%C3%A0i-12-v%C3%B2ng-l%E1%BA%B7p-while-l%E1%BA%B7p-khi-%C4%91i%E1%BB%81u-ki%E1%BB%87n-%C4%91%C3%BAng/">
+                
+                    <img src="https://img.youtube.com/vi/E4sUJ4LvYY0/maxresdefault.jpg" loading="lazy" alt="">
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/MyPortfolio/p/b%C3%A0i-12-v%C3%B2ng-l%E1%BA%B7p-while-l%E1%BA%B7p-khi-%C4%91i%E1%BB%81u-ki%E1%BB%87n-%C4%91%C3%BAng/">Bài 12 - Vòng Lặp While - Lặp Khi Điều Kiện Đúng</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <header class="article-category">
+        
+            <a href="/MyPortfolio/categories/javascript-series/" class="article-category-link">
+                JavaScript Series
+            </a>
+        
+            <a href="/MyPortfolio/categories/javascript-c%C6%A1-b%E1%BA%A3n/" class="article-category-link">
+                JavaScript Cơ Bản
+            </a>
+        
+    </header>
+    
+
+    
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 28, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="-video-hướng-dẫn-chi-tiết">🎥 Video hướng dẫn chi tiết
+</h2><p><strong>Nguồn:</strong> <a class="link" href="https://www.youtube.com/playlist?list=PL33lvabfss1ywJRoh40x9fmAfgbI1hpVX"  target="_blank" rel="noopener"
+    >Khóa học JavaScript - Kteam</a>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/E4sUJ4LvYY0" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+</p>
+<hr>
+<h2 id="-vòng-lặp-while-là-gì">➰ Vòng lặp while là gì?
+</h2><p><strong>Vòng lặp while</strong> thực hiện <strong>lặp đi lặp lại</strong> một đoạn code <strong>khi điều kiện còn đúng</strong>:</p>
+<ul>
+<li>🔄 <strong>Kiểm tra điều kiện trước</strong> khi thực hiện</li>
+<li>⏹️ <strong>Dừng</strong> khi điều kiện trở thành <code>false</code></li>
+<li>⚠️ <strong>Nguy hiểm</strong>: Có thể tạo <strong>vòng lặp vô tận</strong> nếu không cẩn thận</li>
+<li>🎯 <strong>Phù hợp</strong>: Khi không biết trước số lần lặp</li>
+</ul>
+<h2 id="-cú-pháp-while-loop">🔄 Cú pháp while loop
+</h2><h3 id="cấu-trúc-cơ-bản">Cấu trúc cơ bản:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">condition</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Code được thực hiện khi condition = true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Nhớ cập nhật condition để tránh vòng lặp vô tận
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="ví-dụ-đơn-giản">Ví dụ đơn giản:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">count</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Lần thứ&#34;</span>, <span style="color:#a6e22e">count</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">count</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// Quan trọng: cập nhật count
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Kết thúc vòng lặp, count =&#34;</span>, <span style="color:#a6e22e">count</span>); <span style="color:#75715e">// 6
+</span></span></span></code></pre></div><h3 id="đếm-ngược">Đếm ngược:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">countdown</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">countdown</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Còn&#34;</span>, <span style="color:#a6e22e">countdown</span>, <span style="color:#e6db74">&#34;giây...&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">countdown</span><span style="color:#f92672">--</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;🚀 Khởi động!&#34;</span>);
+</span></span></code></pre></div><h2 id="-vòng-lặp-vô-tận-và-cách-tránh">⚠️ Vòng lặp vô tận và cách tránh
+</h2><h3 id="ví-dụ-vòng-lặp-vô-tận-nguy-hiểm">Ví dụ vòng lặp vô tận (NGUY HIỂM!):
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// ❌ ĐỪNG CHẠY CODE NÀY!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// let i = 1;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// while (i &lt;= 5) {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//     console.log(i);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//     // Quên cập nhật i → i luôn = 1 → vòng lặp vô tận
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ❌ Các trường hợp khác
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// while (true) {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//     console.log(&#34;Vô tận!&#34;);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//     // Không có break hoặc cách thoát
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// }
+</span></span></span></code></pre></div><h3 id="cách-tránh-vòng-lặp-vô-tận">Cách tránh vòng lặp vô tận:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// ✅ Luôn cập nhật biến điều kiện
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// QUAN TRỌNG!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ✅ Hoặc dùng safety counter
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">attempts</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">maxAttempts</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">someCondition</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">attempts</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">maxAttempts</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Code logic
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">attempts</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">attempts</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">maxAttempts</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Đã đạt giới hạn an toàn&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="3-do-while-loop">3. do-while loop
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// while - kiểm tra trước
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;while:&#34;</span>, <span style="color:#a6e22e">x</span>); <span style="color:#75715e">// Không chạy vì 10 không &lt; 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">x</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// do-while - thực hiện trước, kiểm tra sau
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;do-while:&#34;</span>, <span style="color:#a6e22e">y</span>); <span style="color:#75715e">// Chạy 1 lần: &#34;do-while: 10&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">y</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">y</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Ví dụ menu chương trình
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">choice</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;=== MENU ===&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;1. Xem thông tin&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;2. Thoát&#34;</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">choice</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; <span style="color:#75715e">// Giả lập input
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Bạn chọn:&#34;</span>, <span style="color:#a6e22e">choice</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choice</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;→ Hiển thị thông tin&#34;</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">choice</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;→ Thoát chương trình&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">choice</span> <span style="color:#f92672">!==</span> <span style="color:#ae81ff">2</span>);
+</span></span></code></pre></div><h2 id="4-ví-dụ-thực-tế">4. Ví dụ thực tế
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Tìm kiếm trong mảng
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">findInArray</span>(<span style="color:#a6e22e">array</span>, <span style="color:#a6e22e">target</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">index</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">length</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">array</span>[<span style="color:#a6e22e">index</span>] <span style="color:#f92672">===</span> <span style="color:#a6e22e">target</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">found</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">index</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">index</span> };
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">index</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">found</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>, <span style="color:#a6e22e">index</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> };
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Test
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">3</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">findInArray</span>(<span style="color:#a6e22e">numbers</span>, <span style="color:#ae81ff">8</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">// { found: true, index: 2 }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Validation với while
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getValidAge</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">age</span>, <span style="color:#a6e22e">attempts</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">attempts</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> Number(<span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Nhập tuổi (0-150):&#34;</span>));
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>isNaN(<span style="color:#a6e22e">age</span>) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">150</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">age</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">attempts</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Tuổi không hợp lệ. Còn </span><span style="color:#e6db74">${</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">attempts</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> lần thử`</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>; <span style="color:#75715e">// Hết lượt thử
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="chốt-lại">Chốt lại
+</h2><ol>
+<li><strong>while loop</strong>: Kiểm tra điều kiện trước khi thực hiện, lặp khi điều kiện còn <code>true</code></li>
+<li><strong>do-while loop</strong>: Thực hiện ít nhất 1 lần, kiểm tra điều kiện sau</li>
+<li><strong>Tránh vòng lặp vô tận</strong>: Luôn cập nhật biến điều kiện, dùng safety counter</li>
+<li><strong>Use cases</strong>: Không biết trước số lần lặp, validation input, tìm kiếm dữ liệu</li>
+<li><strong>Best practices</strong>: Test kỹ logic điều kiện, luôn có cách thoát khỏi loop</li>
+</ol>
+<hr>
+<h3 id="-bài-tiếp-theo">📚 Bài tiếp theo
+</h3><p>👉 <a class="link" href="../bai-13-vong-lap-for/" ><strong>Bài 13: Vòng lặp For</strong></a> - Tìm hiểu vòng lặp for và các biến thể của nó!</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/MyPortfolio/tags/javascript-basic/">Javascript-Basic</a>
+        
+            <a href="/MyPortfolio/tags/while-loop/">While-Loop</a>
+        
+            <a href="/MyPortfolio/tags/do-while/">Do-While</a>
+        
+            <a href="/MyPortfolio/tags/loops/">Loops</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-11-c%C3%A2u-l%E1%BB%87nh-%C4%91i%E1%BB%81u-ki%E1%BB%87n-if-else-switch-case-%C4%91i%E1%BB%81u-khi%E1%BB%83n-lu%E1%BB%93ng/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/g6AVmwqtnyw/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/g6AVmwqtnyw/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 11 - Câu Lệnh Điều Kiện if-else, switch-case - Điều Khiển Luồng</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-10-null-v%C3%A0-undefined-hi%E1%BB%83u-r%C3%B5-s%E1%BB%B1-kh%C3%A1c-bi%E1%BB%87t/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/CeM74bs91Sw/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/CeM74bs91Sw/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 10 - Null và Undefined - Hiểu Rõ Sự Khác Biệt</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-9-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-boolean-logic-%C4%91%C3%BAng/sai-trong-javascript/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/2Uvl-lJ9fBY/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/2Uvl-lJ9fBY/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 9 - Kiểu Dữ Liệu Boolean - Logic Đúng/Sai Trong JavaScript</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-8-template-literals-number-string-c%C3%B4ng-c%E1%BB%A5-m%E1%BA%A1nh-m%E1%BA%BD-es6/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/hiFBsPtFgOg/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/hiFBsPtFgOg/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-7-kh%C3%A1i-qu%C3%A1t-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-chu%E1%BB%97i-string-x%E1%BB%AD-l%C3%BD-v%C4%83n-b%E1%BA%A3n/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/0ABTCy5FbP4/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/0ABTCy5FbP4/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 7 - Khái Quát Kiểu Dữ Liệu Chuỗi (String) - Xử Lý Văn Bản</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Woong Ho Tuan Nguyen
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/MyPortfolio/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

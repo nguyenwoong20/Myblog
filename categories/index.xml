@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Woong Ho Tuan Nguyen</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/</link>
+        <description>Recent content in Categories on Woong Ho Tuan Nguyen</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>nguyenwoong20@gmail.com (Nguyen)</managingEditor>
+        <webMaster>nguyenwoong20@gmail.com (Nguyen)</webMaster>
+        <lastBuildDate>Sun, 28 Sep 2025 16:00:00 +0700</lastBuildDate><atom:link href="https://nguyenwoong20.github.io/MyPortfolio/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>JavaScript Cơ Bản</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/javascript-c%C6%A1-b%E1%BA%A3n/</link>
+        <pubDate>Sun, 28 Sep 2025 16:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/javascript-c%C6%A1-b%E1%BA%A3n/</guid>
+        <description>&lt;img src="https://nguyenwoong20.github.io/MyPortfolio/categories/javascript-c%C6%A1-b%E1%BA%A3n/javascript.jpg" alt="Featured image of post JavaScript Cơ Bản" /&gt;&lt;h1 id=&#34;javascript-cơ-bản&#34;&gt;JavaScript Cơ Bản
+&lt;/h1&gt;&lt;p&gt;Khám phá thế giới lập trình JavaScript từ những kiến thức nền tảng cơ bản nhất.&lt;/p&gt;
+&lt;h2 id=&#34;bạn-sẽ-học-được&#34;&gt;Bạn sẽ học được:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Cú pháp JavaScript cơ bản&lt;/li&gt;
+&lt;li&gt;Biến, kiểu dữ liệu và toán tử&lt;/li&gt;
+&lt;li&gt;Cấu trúc điều khiển (if/else, loops)&lt;/li&gt;
+&lt;li&gt;Functions và scope&lt;/li&gt;
+&lt;li&gt;Arrays và objects cơ bản&lt;/li&gt;
+&lt;li&gt;DOM manipulation&lt;/li&gt;
+&lt;li&gt;Event handling cơ bản&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>JavaScript Series</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/javascript-series/</link>
+        <pubDate>Sun, 28 Sep 2025 16:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/javascript-series/</guid>
+        <description>&lt;img src="https://nguyenwoong20.github.io/MyPortfolio/categories/javascript-series/JS.jpg" alt="Featured image of post JavaScript Series" /&gt;&lt;h1 id=&#34;javascript-series&#34;&gt;JavaScript Series
+&lt;/h1&gt;&lt;p&gt;Master modern JavaScript development with our comprehensive tutorial series.&lt;/p&gt;
+&lt;h2 id=&#34;what-youll-learn&#34;&gt;What you&amp;rsquo;ll learn:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;JavaScript fundamentals and ES6+ features&lt;/li&gt;
+&lt;li&gt;Asynchronous programming (Promises, Async/Await)&lt;/li&gt;
+&lt;li&gt;DOM manipulation and event handling&lt;/li&gt;
+&lt;li&gt;Frontend frameworks and libraries&lt;/li&gt;
+&lt;li&gt;Node.js backend development&lt;/li&gt;
+&lt;li&gt;Modern development tools and practices&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Java Nâng Cao</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/java-n%C3%A2ng-cao/</link>
+        <pubDate>Mon, 22 Sep 2025 21:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/java-n%C3%A2ng-cao/</guid>
+        <description>&lt;img src="https://nguyenwoong20.github.io/MyPortfolio/categories/java-n%C3%A2ng-cao/java.jpg" alt="Featured image of post Java Nâng Cao" /&gt;&lt;h1 id=&#34;java-nâng-cao&#34;&gt;Java Nâng Cao
+&lt;/h1&gt;&lt;p&gt;Nâng cao kỹ năng Java với các chủ đề chuyên sâu và kỹ thuật tiên tiến.&lt;/p&gt;
+&lt;h2 id=&#34;bạn-sẽ-học-được&#34;&gt;Bạn sẽ học được:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Lập trình hướng đối tượng nâng cao&lt;/li&gt;
+&lt;li&gt;Inheritance và Polymorphism&lt;/li&gt;
+&lt;li&gt;Abstract classes và Interfaces&lt;/li&gt;
+&lt;li&gt;Generic Programming&lt;/li&gt;
+&lt;li&gt;Collections Framework chi tiết&lt;/li&gt;
+&lt;li&gt;Exception Handling nâng cao&lt;/li&gt;
+&lt;li&gt;Multithreading cơ bản&lt;/li&gt;
+&lt;li&gt;Design Patterns&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Java Series</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/java-series/</link>
+        <pubDate>Mon, 22 Sep 2025 21:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/java-series/</guid>
+        <description>&lt;img src="https://nguyenwoong20.github.io/MyPortfolio/categories/java-series/java2.jpg" alt="Featured image of post Java Series" /&gt;&lt;h1 id=&#34;java-series&#34;&gt;Java Series
+&lt;/h1&gt;&lt;p&gt;Explore our comprehensive Java programming tutorials, from beginner concepts to advanced techniques.&lt;/p&gt;
+&lt;h2 id=&#34;what-youll-learn&#34;&gt;What you&amp;rsquo;ll learn:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Java fundamentals and syntax&lt;/li&gt;
+&lt;li&gt;Object-Oriented Programming (OOP)&lt;/li&gt;
+&lt;li&gt;Collections Framework&lt;/li&gt;
+&lt;li&gt;Exception Handling&lt;/li&gt;
+&lt;li&gt;Spring Boot development&lt;/li&gt;
+&lt;li&gt;Best practices and design patterns&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Java Cơ Bản</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/java-c%C6%A1-b%E1%BA%A3n/</link>
+        <pubDate>Mon, 22 Sep 2025 13:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/java-c%C6%A1-b%E1%BA%A3n/</guid>
+        <description>&lt;img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Featured image of post Java Cơ Bản" /&gt;&lt;h1 id=&#34;java-cơ-bản&#34;&gt;Java Cơ Bản
+&lt;/h1&gt;&lt;p&gt;Khám phá thế giới lập trình Java từ những kiến thức nền tảng cơ bản nhất.&lt;/p&gt;
+&lt;h2 id=&#34;bạn-sẽ-học-được&#34;&gt;Bạn sẽ học được:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Cú pháp Java cơ bản&lt;/li&gt;
+&lt;li&gt;Biến, kiểu dữ liệu và toán tử&lt;/li&gt;
+&lt;li&gt;Cấu trúc điều khiển (if/else, loops)&lt;/li&gt;
+&lt;li&gt;Classes và Objects&lt;/li&gt;
+&lt;li&gt;String manipulation&lt;/li&gt;
+&lt;li&gt;Arrays và Collections cơ bản&lt;/li&gt;
+&lt;li&gt;Exception handling cơ bản&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Backend Development</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/backend-development/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/backend-development/</guid>
+        <description>&lt;img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Featured image of post Backend Development" /&gt;&lt;h1 id=&#34;backend-development-series&#34;&gt;Backend Development Series
+&lt;/h1&gt;&lt;p&gt;Master server-side development with databases, APIs, and scalable architecture.&lt;/p&gt;
+&lt;h2 id=&#34;what-youll-learn&#34;&gt;What you&amp;rsquo;ll learn:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Database design and SQL&lt;/li&gt;
+&lt;li&gt;RESTful API development&lt;/li&gt;
+&lt;li&gt;Authentication and security&lt;/li&gt;
+&lt;li&gt;Microservices architecture&lt;/li&gt;
+&lt;li&gt;Server deployment and DevOps&lt;/li&gt;
+&lt;li&gt;Performance optimization and scaling&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Mobile Development</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/mobile-development/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/mobile-development/</guid>
+        <description>&lt;img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Featured image of post Mobile Development" /&gt;&lt;h1 id=&#34;mobile-development-series&#34;&gt;Mobile Development Series
+&lt;/h1&gt;&lt;p&gt;Create powerful mobile applications with our step-by-step tutorials and guides.&lt;/p&gt;
+&lt;h2 id=&#34;what-youll-learn&#34;&gt;What you&amp;rsquo;ll learn:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Native Android development with Kotlin&lt;/li&gt;
+&lt;li&gt;iOS development with Swift&lt;/li&gt;
+&lt;li&gt;Cross-platform development with React Native/Flutter&lt;/li&gt;
+&lt;li&gt;Mobile UI/UX design principles&lt;/li&gt;
+&lt;li&gt;App deployment and optimization&lt;/li&gt;
+&lt;li&gt;Mobile backend integration&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Python Series</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/python-series/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/python-series/</guid>
+        <description>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Featured image of post Python Series" /&gt;&lt;h1 id=&#34;python-series&#34;&gt;Python Series
+&lt;/h1&gt;&lt;p&gt;Learn Python programming from the ground up with practical examples and projects.&lt;/p&gt;
+&lt;h2 id=&#34;what-youll-learn&#34;&gt;What you&amp;rsquo;ll learn:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Python syntax and fundamentals&lt;/li&gt;
+&lt;li&gt;Data structures and algorithms&lt;/li&gt;
+&lt;li&gt;Web development with Django/Flask&lt;/li&gt;
+&lt;li&gt;Data science and machine learning&lt;/li&gt;
+&lt;li&gt;Automation and scripting&lt;/li&gt;
+&lt;li&gt;Best practices and testing&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Web Development</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/web-development/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/categories/web-development/</guid>
+        <description>&lt;img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Featured image of post Web Development" /&gt;&lt;h1 id=&#34;web-development-series&#34;&gt;Web Development Series
+&lt;/h1&gt;&lt;p&gt;Build modern, responsive websites and web applications with our comprehensive tutorials.&lt;/p&gt;
+&lt;h2 id=&#34;what-youll-learn&#34;&gt;What you&amp;rsquo;ll learn:
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;HTML5 semantic markup&lt;/li&gt;
+&lt;li&gt;CSS3 and responsive design&lt;/li&gt;
+&lt;li&gt;JavaScript and frontend frameworks&lt;/li&gt;
+&lt;li&gt;Backend development&lt;/li&gt;
+&lt;li&gt;Database integration&lt;/li&gt;
+&lt;li&gt;Deployment and optimization&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

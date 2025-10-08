@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Python Series on Woong Ho Tuan Nguyen</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/categories/python-series/</link>
+        <description>Recent content in Python Series on Woong Ho Tuan Nguyen</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>nguyenwoong20@gmail.com (Nguyen)</managingEditor>
+        <webMaster>nguyenwoong20@gmail.com (Nguyen)</webMaster><atom:link href="https://nguyenwoong20.github.io/MyPortfolio/categories/python-series/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>

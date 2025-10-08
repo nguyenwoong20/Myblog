@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Khám phá Template Literals ES6 và cách chuyển đổi giữa Number-String một cách hiệu quả">
+<title>Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6</title>
+
+<link rel='canonical' href='https://nguyenwoong20.github.io/MyPortfolio/p/b%C3%A0i-8-template-literals-number-string-c%C3%B4ng-c%E1%BB%A5-m%E1%BA%A1nh-m%E1%BA%BD-es6/'>
+
+<link rel="stylesheet" href="/MyPortfolio/scss/style.min.5ce31a95bd07c16a43f90312c3778c1c3c4fd76a2f4ab4e4a9a319399c903666.css"><meta property='og:title' content="Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6">
+<meta property='og:description' content="Khám phá Template Literals ES6 và cách chuyển đổi giữa Number-String một cách hiệu quả">
+<meta property='og:url' content='https://nguyenwoong20.github.io/MyPortfolio/p/b%C3%A0i-8-template-literals-number-string-c%C3%B4ng-c%E1%BB%A5-m%E1%BA%A1nh-m%E1%BA%BD-es6/'>
+<meta property='og:site_name' content='Woong Ho Tuan Nguyen'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='javascript-basic' /><meta property='article:tag' content='template-literals' /><meta property='article:tag' content='es6' /><meta property='article:tag' content='string-number' /><meta property='article:published_time' content='2025-09-28T12:30:00&#43;07:00'/><meta property='article:modified_time' content='2025-09-28T12:30:00&#43;07:00'/><meta property='og:image' content='https://img.youtube.com/vi/hiFBsPtFgOg/maxresdefault.jpg' />
+<meta name="twitter:title" content="Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6">
+<meta name="twitter:description" content="Khám phá Template Literals ES6 và cách chuyển đổi giữa Number-String một cách hiệu quả"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://img.youtube.com/vi/hiFBsPtFgOg/maxresdefault.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/MyPortfolio/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/MyPortfolio/img/avatar2_hu_24af44b6bccc68f9.png" width="300"
+                            height="411" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/MyPortfolio">Woong Ho Tuan Nguyen</a></h1>
+            <h2 class="site-description">@nguyenwoong20</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/nguyenwoong20'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/nguyen-woong-3961a8389/'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:nguyenwoong20@gmail.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/MyPortfolio/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/post/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/MyPortfolio/p/b%C3%A0i-8-template-literals-number-string-c%C3%B4ng-c%E1%BB%A5-m%E1%BA%A1nh-m%E1%BA%BD-es6/">
+                
+                    <img src="https://img.youtube.com/vi/hiFBsPtFgOg/maxresdefault.jpg" loading="lazy" alt="">
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/MyPortfolio/p/b%C3%A0i-8-template-literals-number-string-c%C3%B4ng-c%E1%BB%A5-m%E1%BA%A1nh-m%E1%BA%BD-es6/">Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <header class="article-category">
+        
+            <a href="/MyPortfolio/categories/javascript-series/" class="article-category-link">
+                JavaScript Series
+            </a>
+        
+            <a href="/MyPortfolio/categories/javascript-c%C6%A1-b%E1%BA%A3n/" class="article-category-link">
+                JavaScript Cơ Bản
+            </a>
+        
+    </header>
+    
+
+    
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 28, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="-video-hướng-dẫn-chi-tiết">🎥 Video hướng dẫn chi tiết
+</h2><p><strong>Nguồn:</strong> <a class="link" href="https://www.youtube.com/playlist?list=PL33lvabfss1ywJRoh40x9fmAfgbI1hpVX"  target="_blank" rel="noopener"
+    >Khóa học JavaScript - Kteam</a>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/hiFBsPtFgOg" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+</p>
+<hr>
+<h2 id="1-template-literals---cách-mới-tạo-string">1. Template Literals - Cách mới tạo String
+</h2><p><strong>Template Literals</strong> sử dụng backticks (<code>`</code>) thay vì quotes:</p>
+<h3 id="cách-cũ-es5">Cách cũ (ES5):
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">oldWay</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Xin chào, tôi là &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; tuổi.&#34;</span>;
+</span></span></code></pre></div><h3 id="cách-mới-es6">Cách mới (ES6):
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newWay</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Xin chào, tôi là </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">age</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> tuổi.`</span>;
+</span></span></code></pre></div><h2 id="2-string-interpolation-với-">2. String Interpolation với $
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">product</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;iPhone&#34;</span>, <span style="color:#a6e22e">price</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">25000000</span>, <span style="color:#a6e22e">quantity</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">invoice</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Sản phẩm: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">product</span><span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Giá: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">price</span>.<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;vi-VN&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> VND
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Số lượng: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">quantity</span><span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Thành tiền: </span><span style="color:#e6db74">${</span>(<span style="color:#a6e22e">price</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">quantity</span>).<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;vi-VN&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> VND`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">invoice</span>);
+</span></span></code></pre></div><h3 id="gọi-hàm-trong-template">Gọi hàm trong template:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDiscount</span>(<span style="color:#a6e22e">price</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">price</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1000000</span> <span style="color:#f92672">?</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Giảm giá: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">getDiscount</span>(<span style="color:#ae81ff">25000000</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">%
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Thời gian: </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;vi-VN&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span></code></pre></div><h2 id="3-multi-line-strings">3. Multi-line Strings
+</h2><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">userName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;John Doe&#34;</span>, <span style="color:#a6e22e">userEmail</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;john@example.com&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">htmlTemplate</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;div class=&#34;user-card&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;h1&gt;Welcome, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">userName</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!&lt;/h1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;p&gt;Email: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">userEmail</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;button onclick=&#34;logout()&#34;&gt;Logout&lt;/button&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;/div&gt;`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">htmlTemplate</span>);
+</span></span></code></pre></div><h2 id="4-chuyển-đổi-number--string">4. Chuyển đổi Number ↔ String
+</h2><h3 id="string-to-number">String to Number:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str1</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123&#34;</span>, <span style="color:#a6e22e">str2</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;45.67&#34;</span>, <span style="color:#a6e22e">str3</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123abc&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Number() - Nghiêm ngặt
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#a6e22e">str1</span>));    <span style="color:#75715e">// 123
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Number(<span style="color:#a6e22e">str3</span>));    <span style="color:#75715e">// NaN
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// parseInt(), parseFloat() - Lấy số từ đầu
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(parseInt(<span style="color:#a6e22e">str3</span>));     <span style="color:#75715e">// 123 (bỏ phần chữ)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(parseFloat(<span style="color:#a6e22e">str2</span>));   <span style="color:#75715e">// 45.67
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Unary operator + - Ngắn gọn
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#f92672">+</span><span style="color:#a6e22e">str1</span>);             <span style="color:#75715e">// 123
+</span></span></span></code></pre></div><h3 id="number-to-string">Number to String:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">num</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">123.456</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">num</span>.<span style="color:#a6e22e">toString</span>());     <span style="color:#75715e">// &#34;123.456&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(String(<span style="color:#a6e22e">num</span>));        <span style="color:#75715e">// &#34;123.456&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">num</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);           <span style="color:#75715e">// &#34;123.456&#34; (template literal)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">num</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#34;</span>);           <span style="color:#75715e">// &#34;123.456&#34; (nối chuỗi rỗng)
+</span></span></span></code></pre></div><h3 id="formatting-numbers">Formatting Numbers:
+</h3><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1234567.89</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">number</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>));      <span style="color:#75715e">// &#34;1234567.89&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">number</span>.<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;vi-VN&#39;</span>)); <span style="color:#75715e">// &#34;1.234.567,89&#34;
+</span></span></span></code></pre></div><h2 id="5-bài-tập-nhỏ">5. Bài tập nhỏ
+</h2><p>Tạo template HTML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createUserCard</span>(<span style="color:#a6e22e">user</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;div class=&#34;user-card&#34;&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;h3&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/h3&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;p&gt;Email: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">email</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt;p&gt;Role: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">role</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/p&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&lt;/div&gt;`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">user</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;john@email.com&#34;</span>, <span style="color:#a6e22e">role</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Admin&#34;</span> };
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">createUserCard</span>(<span style="color:#a6e22e">user</span>));
+</span></span></code></pre></div><p>Format số tiền:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">formatMoney</span>(<span style="color:#a6e22e">amount</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">amount</span>.<span style="color:#a6e22e">toLocaleString</span>(<span style="color:#e6db74">&#39;vi-VN&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> VND`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">formatMoney</span>(<span style="color:#ae81ff">1234567</span>)); <span style="color:#75715e">// &#34;1.234.567 VND&#34;
+</span></span></span></code></pre></div><h2 id="chốt-lại">Chốt lại:
+</h2><p>Bài 8 giúp bạn hiểu Template Literals với backticks và <code>${}</code> để nhúng biểu thức, tạo multi-line strings, chuyển đổi giữa Number và String bằng Number(), parseInt(), parseFloat(), toString(), và cách format số với toFixed(), toLocaleString().</p>
+<hr>
+<h3 id="-bài-tiếp-theo">📚 Bài tiếp theo
+</h3><p>👉 <a class="link" href="../bai-9-kieu-du-lieu-boolean/" ><strong>Bài 9: Kiểu dữ liệu Boolean</strong></a> - Tìm hiểu về logic đúng/sai và các phép toán Boolean!</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/MyPortfolio/tags/javascript-basic/">Javascript-Basic</a>
+        
+            <a href="/MyPortfolio/tags/template-literals/">Template-Literals</a>
+        
+            <a href="/MyPortfolio/tags/es6/">Es6</a>
+        
+            <a href="/MyPortfolio/tags/string-number/">String-Number</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-7-kh%C3%A1i-qu%C3%A1t-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-chu%E1%BB%97i-string-x%E1%BB%AD-l%C3%BD-v%C4%83n-b%E1%BA%A3n/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/0ABTCy5FbP4/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/0ABTCy5FbP4/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 7 - Khái Quát Kiểu Dữ Liệu Chuỗi (String) - Xử Lý Văn Bản</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-6-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-s%E1%BB%91-number-l%C3%A0m-ch%E1%BB%A7-s%E1%BB%91-h%E1%BB%8Dc-javascript/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/bynuI8B2uho/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/bynuI8B2uho/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 6 - Kiểu Dữ Liệu Số Number - Làm Chủ Số Học JavaScript</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-5-to%C3%A1n-t%E1%BB%AD-g%C3%A1n-v%C3%A0-to%C3%A1n-t%E1%BB%AD-so-s%C3%A1nh-ph%C3%A9p-to%C3%A1n-c%C6%A1-b%E1%BA%A3n/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/N2QqCxjz-hY/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/N2QqCxjz-hY/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 5 - Toán Tử Gán và Toán Tử So Sánh - Phép Toán Cơ Bản</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-4-kh%E1%BB%9Fi-t%E1%BA%A1o-bi%E1%BA%BFn-v%E1%BB%9Bi-var-v%C3%A0-let-s%E1%BB%B1-kh%C3%A1c-bi%E1%BB%87t-quan-tr%E1%BB%8Dng/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/kfibc_7N69o/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/kfibc_7N69o/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 4 - Khởi Tạo Biến Với var và let - Sự Khác Biệt Quan Trọng</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-3-bi%E1%BA%BFn-v%C3%A0-h%E1%BA%B1ng-s%E1%BB%91-n%C6%A1i-l%C6%B0u-tr%E1%BB%AF-d%E1%BB%AF-li%E1%BB%87u/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/5S2UOHZE5M0/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/5S2UOHZE5M0/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 3 - Biến và Hằng Số - Nơi Lưu Trữ Dữ Liệu</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Woong Ho Tuan Nguyen
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/MyPortfolio/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

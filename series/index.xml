@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Series on Woong Ho Tuan Nguyen</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/series/</link>
+        <description>Recent content in Series on Woong Ho Tuan Nguyen</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>nguyenwoong20@gmail.com (Nguyen)</managingEditor>
+        <webMaster>nguyenwoong20@gmail.com (Nguyen)</webMaster>
+        <lastBuildDate>Sun, 28 Sep 2025 16:00:00 +0700</lastBuildDate><atom:link href="https://nguyenwoong20.github.io/MyPortfolio/series/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>JavaScript Basic</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/series/javascript-basic/</link>
+        <pubDate>Sun, 28 Sep 2025 16:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/series/javascript-basic/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JavaScript Cơ Bản</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/series/javascript-c%C6%A1-b%E1%BA%A3n/</link>
+        <pubDate>Sat, 27 Sep 2025 09:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/series/javascript-c%C6%A1-b%E1%BA%A3n/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java Advanced</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/series/java-advanced/</link>
+        <pubDate>Mon, 22 Sep 2025 21:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/series/java-advanced/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Java Basic</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/series/java-basic/</link>
+        <pubDate>Mon, 22 Sep 2025 13:00:00 +0700</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/series/java-basic/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="🎥 Video minh họa nguồn: YTB Code Thu\r1) Khái niệm Class trong Java\rClass là bản thiết kế cho đối tượng – mô tả thuộc tính (biến) và hành động (phương thức) chung cho một loại sự vật.\nKhi tạo object (đối tượng) từ class, ta sử dụng bản thiết kế này để sinh ra thực thể thật dùng trong chương trình.\nVí dụ:\nclass Student { String name; int age; void introduce() { System.out.println(name + &#34; - &#34; + age); } } Student s = new Student(); s.name = &#34;An&#34;; s.age = 20; s.introduce(); // In: An - 20 2) Constructor (Hàm tạo) là gì?\rConstructor là một phương thức đặc biệt dùng để khởi tạo đối tượng từ class.\n">
+<title>Bài 4 - Lớp (Class) và Constructor trong Java</title>
+
+<link rel='canonical' href='https://nguyenwoong20.github.io/MyPortfolio/p/b%C3%A0i-4-l%E1%BB%9Bp-class-v%C3%A0-constructor-trong-java/'>
+
+<link rel="stylesheet" href="/MyPortfolio/scss/style.min.5ce31a95bd07c16a43f90312c3778c1c3c4fd76a2f4ab4e4a9a319399c903666.css"><meta property='og:title' content="Bài 4 - Lớp (Class) và Constructor trong Java">
+<meta property='og:description' content="🎥 Video minh họa nguồn: YTB Code Thu\r1) Khái niệm Class trong Java\rClass là bản thiết kế cho đối tượng – mô tả thuộc tính (biến) và hành động (phương thức) chung cho một loại sự vật.\nKhi tạo object (đối tượng) từ class, ta sử dụng bản thiết kế này để sinh ra thực thể thật dùng trong chương trình.\nVí dụ:\nclass Student { String name; int age; void introduce() { System.out.println(name + &#34; - &#34; + age); } } Student s = new Student(); s.name = &#34;An&#34;; s.age = 20; s.introduce(); // In: An - 20 2) Constructor (Hàm tạo) là gì?\rConstructor là một phương thức đặc biệt dùng để khởi tạo đối tượng từ class.\n">
+<meta property='og:url' content='https://nguyenwoong20.github.io/MyPortfolio/p/b%C3%A0i-4-l%E1%BB%9Bp-class-v%C3%A0-constructor-trong-java/'>
+<meta property='og:site_name' content='Woong Ho Tuan Nguyen'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='java-basic' /><meta property='article:published_time' content='2025-09-22T10:30:00&#43;07:00'/><meta property='article:modified_time' content='2025-09-22T10:30:00&#43;07:00'/><meta property='og:image' content='https://img.youtube.com/vi/n33H9XSXRxc/maxresdefault.jpg' />
+<meta name="twitter:title" content="Bài 4 - Lớp (Class) và Constructor trong Java">
+<meta name="twitter:description" content="🎥 Video minh họa nguồn: YTB Code Thu\r1) Khái niệm Class trong Java\rClass là bản thiết kế cho đối tượng – mô tả thuộc tính (biến) và hành động (phương thức) chung cho một loại sự vật.\nKhi tạo object (đối tượng) từ class, ta sử dụng bản thiết kế này để sinh ra thực thể thật dùng trong chương trình.\nVí dụ:\nclass Student { String name; int age; void introduce() { System.out.println(name + &#34; - &#34; + age); } } Student s = new Student(); s.name = &#34;An&#34;; s.age = 20; s.introduce(); // In: An - 20 2) Constructor (Hàm tạo) là gì?\rConstructor là một phương thức đặc biệt dùng để khởi tạo đối tượng từ class.\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://img.youtube.com/vi/n33H9XSXRxc/maxresdefault.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/MyPortfolio/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/MyPortfolio/img/avatar2_hu_24af44b6bccc68f9.png" width="300"
+                            height="411" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/MyPortfolio">Woong Ho Tuan Nguyen</a></h1>
+            <h2 class="site-description">@nguyenwoong20</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/nguyenwoong20'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/nguyen-woong-3961a8389/'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:nguyenwoong20@gmail.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/MyPortfolio/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/post/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/MyPortfolio/p/b%C3%A0i-4-l%E1%BB%9Bp-class-v%C3%A0-constructor-trong-java/">
+                
+                    <img src="https://img.youtube.com/vi/n33H9XSXRxc/maxresdefault.jpg" loading="lazy" alt="">
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/MyPortfolio/p/b%C3%A0i-4-l%E1%BB%9Bp-class-v%C3%A0-constructor-trong-java/">Bài 4 - Lớp (Class) và Constructor trong Java</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <header class="article-category">
+        
+            <a href="/MyPortfolio/categories/java-series/" class="article-category-link">
+                Java Series
+            </a>
+        
+            <a href="/MyPortfolio/categories/java-c%C6%A1-b%E1%BA%A3n/" class="article-category-link">
+                Java Cơ Bản
+            </a>
+        
+    </header>
+    
+
+    
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 22, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="-video-minh-họa-nguồn-ytb-code-thu">🎥 Video minh họa nguồn: YTB Code Thu
+</h2><div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/n33H9XSXRxc" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+<hr>
+<h2 id="1-khái-niệm-class-trong-java">1) Khái niệm Class trong Java
+</h2><p>Class là bản thiết kế cho đối tượng – mô tả thuộc tính (biến) và hành động (phương thức) chung cho một loại sự vật.</p>
+<p>Khi tạo object (đối tượng) từ class, ta sử dụng bản thiết kế này để sinh ra thực thể thật dùng trong chương trình.</p>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> {
+</span></span><span style="display:flex;"><span>    String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">introduce</span>() {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; - &#34;</span> <span style="color:#f92672">+</span> age);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Student s <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student();
+</span></span><span style="display:flex;"><span>s.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;An&#34;</span>;
+</span></span><span style="display:flex;"><span>s.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> 20;
+</span></span><span style="display:flex;"><span>s.<span style="color:#a6e22e">introduce</span>(); <span style="color:#75715e">// In: An - 20</span>
+</span></span></code></pre></div><h2 id="2-constructor-hàm-tạo-là-gì">2) Constructor (Hàm tạo) là gì?
+</h2><p>Constructor là một phương thức đặc biệt dùng để khởi tạo đối tượng từ class.</p>
+<p>Tên constructor trùng tên class, không có kiểu trả về, gọi tự động khi dùng từ khóa new.</p>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> {
+</span></span><span style="display:flex;"><span>    String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Student</span>(String studentName) {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> studentName;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Student sv <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student(<span style="color:#e6db74">&#34;Nam&#34;</span>);
+</span></span><span style="display:flex;"><span>System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(sv.<span style="color:#a6e22e">name</span>); <span style="color:#75715e">// Nam</span>
+</span></span></code></pre></div><h2 id="3-default-constructor--overloading">3) Default Constructor &amp; Overloading
+</h2><p>Nếu bạn không tạo constructor, Java tự thêm constructor mặc định (không nhận tham số).</p>
+<p>Có thể tạo nhiều constructor với tham số khác nhau (constructor overloading).</p>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> {
+</span></span><span style="display:flex;"><span>    String name;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> age;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Student</span>() {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;No Name&#34;</span>;
+</span></span><span style="display:flex;"><span>        age <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Student</span>(String n, <span style="color:#66d9ef">int</span> a) {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> n;
+</span></span><span style="display:flex;"><span>        age <span style="color:#f92672">=</span> a;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>Student s1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student();
+</span></span><span style="display:flex;"><span>Student s2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student(<span style="color:#e6db74">&#34;Long&#34;</span>, 22);
+</span></span></code></pre></div><h2 id="4-khái-niệm-this">4) Khái niệm THIS
+</h2><p>Từ khóa this đại diện cho đối tượng hiện tại, dùng để phân biệt biến thành phần và tham số trong constructor hoặc phương thức.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Student</span>(String name) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="5-kết-luận--cảm-nhận">5) Kết luận &amp; cảm nhận
+</h2><ul>
+<li>
+<p>Xem video của Code Thủ giúp mình hiểu gốc rễ về cách tạo/làm việc với class, sử dụng constructor linh hoạt và phân biệt rõ giữa biến thành phần - biến cục bộ.</p>
+</li>
+<li>
+<p>Class, constructor và kỹ năng dùng this chuẩn xác là chìa khoá lập trình OOP Java hiệu quả.</p>
+</li>
+</ul>
+<h2 id="tiếp-theo-bài-5--điều-kiện--vòng-lặp">Tiếp theo: <a class="link" href="/p/java_bai5_control/" >Bài 5 – Điều kiện &amp; vòng lặp</a>
+</h2>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/MyPortfolio/tags/java-basic/">Java-Basic</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-3-l%C3%A0m-ch%E1%BB%A7-string-trong-java/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/14MHZ23g0eI/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/14MHZ23g0eI/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 3 - Làm chủ String trong Java</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-2-boolean-c%C3%A1i-%C4%91%C3%BAng-c%C3%A1i-sai-trong-java/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/iscik6EOcMo/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/iscik6EOcMo/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 2 - Boolean - Cái Đúng Cái Sai trong JAVA</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/MyPortfolio/p/b%C3%A0i-1-gi%E1%BB%9Bi-thi%E1%BB%87u-java-m%C3%B4i-tr%C6%B0%E1%BB%9Dng-l%E1%BA%ADp-tr%C3%ACnh-hello-world/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/uWdaOoMgFvs/maxresdefault.jpg" loading="lazy" data-key="" data-hash="https://img.youtube.com/vi/uWdaOoMgFvs/maxresdefault.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bài 1 - Giới thiệu Java &amp; môi trường lập trình (Hello World)</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Woong Ho Tuan Nguyen
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/MyPortfolio/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

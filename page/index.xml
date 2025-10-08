@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Woong Ho Tuan Nguyen</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/page/</link>
+        <description>Recent content in Pages on Woong Ho Tuan Nguyen</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>nguyenwoong20@gmail.com (Nguyen)</managingEditor>
+        <webMaster>nguyenwoong20@gmail.com (Nguyen)</webMaster>
+        <lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nguyenwoong20.github.io/MyPortfolio/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/about/</link>
+        <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/about/</guid>
+        <description>&lt;div style=&#34;border-top: 1px dashed #000000ff; margin: 5px 0;&#34;&gt;&lt;/div&gt;
+&lt;p&gt;Hi there!&lt;/p&gt;
+&lt;p&gt;Cảm ơn bạn đã ghé thăm trang cá nhân của tôi.
+Tôi là một lập trình viên Fullstack và người viết blog công nghệ đam mê chia sẻ về các dự án của tôi sau khi ra trường cũng như là những kiến thức về lập trình — đặc biệt là các ngôn ngữ như Java, C# và JavaScript, và có thể sẽ mở rộng thêm nhiều ngôn ngữ khác trong tương lai.&lt;/p&gt;
+&lt;p&gt;Tôi yêu thích việc tạo ra những nội dung thực tế, dễ hiểu nhằm giúp người khác phát triển trong hành trình học lập trình của mình. Blog của tôi bao gồm nhiều chủ đề — từ những khái niệm cơ bản đến các kỹ thuật nâng cao — với trọng tâm là các ví dụ ứng dụng thực tế và trải nghiệm trực tiếp từ dự án.&lt;/p&gt;
+&lt;p&gt;Tôi là người học hỏi nhanh, thích nghi tốt trong môi trường năng động và luôn hứng thú với việc giải quyết các vấn đề phức tạp bằng lập trình. Tôi tin rằng giao tiếp, chia sẻ và học hỏi lẫn nhau là yếu tố cốt lõi giúp một kỹ sư phần mềm phát triển bền vững.&lt;/p&gt;
+&lt;p&gt;Kinh nghiệm học tập và thực hành của tôi đã giúp tôi rèn luyện cả kỹ năng kỹ thuật lẫn tư duy phân tích, đồng thời nâng cao khả năng trình bày những khái niệm phức tạp một cách đơn giản, rõ ràng và dễ tiếp cận. Tôi luôn mong muốn được học hỏi thêm công nghệ mới, phát triển bản thân và đóng góp cho cộng đồng lập trình viên thông qua các dự án, bài viết và chia sẻ cá nhân.&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;/p&gt;
+
+&lt;img src=&#34;https://nguyenwoong20.github.io/MyPortfolio/images/signature/signn.png&#34; alt=&#34;Nguyen Signature&#34; class=&#34;signature-img&#34; style=&#34;max-width: 150px; height: auto; display: block; margin: 10px 0 10px -20px;&#34; /&gt;
+&lt;div style=&#34;margin: 30px 0; width: 100%;&#34;&gt;
+  &lt;div style=&#34;border-top: 1px dashed #000000ff; margin: 5px 0;&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education
+&lt;/h2&gt;&lt;p&gt;My educational journey.&lt;/p&gt;
+
+&lt;div class=&#34;education-card&#34;&gt;
+    &lt;div class=&#34;education-logo&#34;&gt;
+        &lt;img src=&#34;https://nguyenwoong20.github.io/MyPortfolio/images/education/hutech.png&#34; alt=&#34;Ho Chi Minh City University of Technology (HUTECH)&#34; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;education-content&#34;&gt;
+        &lt;h3 class=&#34;university-name&#34;&gt;
+            &lt;a href=&#34;https://www.hutech.edu.vn/english&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+                Ho Chi Minh City University of Technology (HUTECH)
+            &lt;/a&gt;
+        &lt;/h3&gt;
+        &lt;div class=&#34;degree&#34;&gt;Bachelor&amp;#39;s degree&lt;/div&gt;
+        &lt;div class=&#34;field&#34;&gt;Computer Science/Software Engineering&lt;/div&gt;
+        &lt;div class=&#34;education-meta&#34;&gt;
+            &lt;span class=&#34;duration&#34;&gt;2022 - 2026&lt;/span&gt;
+            &lt;span class=&#34;location&#34;&gt;Ho Chi Minh City, Vietnam 🇻🇳&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/links/</link>
+        <pubDate>Sun, 06 Oct 2024 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://nguyenwoong20.github.io/MyPortfolio/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>nguyenwoong20@gmail.com (Nguyen)</author>
+        <guid>https://nguyenwoong20.github.io/MyPortfolio/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

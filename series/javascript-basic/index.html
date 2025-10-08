@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="@nguyenwoong20">
+<title>Series: JavaScript Basic - Woong Ho Tuan Nguyen</title>
+
+<link rel='canonical' href='https://nguyenwoong20.github.io/MyPortfolio/series/javascript-basic/'>
+
+<link rel="stylesheet" href="/MyPortfolio/scss/style.min.5ce31a95bd07c16a43f90312c3778c1c3c4fd76a2f4ab4e4a9a319399c903666.css"><meta property='og:title' content="Series: JavaScript Basic - Woong Ho Tuan Nguyen">
+<meta property='og:description' content="@nguyenwoong20">
+<meta property='og:url' content='https://nguyenwoong20.github.io/MyPortfolio/series/javascript-basic/'>
+<meta property='og:site_name' content='Woong Ho Tuan Nguyen'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-09-28T16:00:00&#43;07:00 '/>
+<meta name="twitter:title" content="Series: JavaScript Basic - Woong Ho Tuan Nguyen">
+<meta name="twitter:description" content="@nguyenwoong20"><link rel="alternate" type="application/rss&#43;xml" href="https://nguyenwoong20.github.io/MyPortfolio/series/javascript-basic/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/MyPortfolio/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/MyPortfolio/img/avatar2_hu_24af44b6bccc68f9.png" width="300"
+                            height="411" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/MyPortfolio">Woong Ho Tuan Nguyen</a></h1>
+            <h2 class="site-description">@nguyenwoong20</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/nguyenwoong20'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.linkedin.com/in/nguyen-woong-3961a8389/'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:nguyenwoong20@gmail.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/MyPortfolio/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/post/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/MyPortfolio/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <header>
+        <h3 class="section-title">
+            
+                Series
+            
+        </h3>
+
+        <div class="section-card">
+            <div class="section-details">
+                <h3 class="section-count">15 pages</h3>
+                <h1 class="section-term">JavaScript Basic</h1>
+                
+            </div>
+        </div>
+    </header>
+    
+    <section class="article-list--compact">
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-1-t%E1%BA%A3i-c%C3%A0i-%C4%91%E1%BA%B7t-nodejs-kh%E1%BB%9Fi-%C4%91%E1%BA%A7u-h%C3%A0nh-tr%C3%ACnh-javascript/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 1 - Tải &amp; Cài Đặt NodeJS - Khởi Đầu Hành Trình JavaScript</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T09:00:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/lwsS-ikKnPs/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 1 - Tải &amp; Cài Đặt NodeJS - Khởi Đầu Hành Trình JavaScript" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-2-ch%E1%BA%A1y-ch%C6%B0%C6%A1ng-tr%C3%ACnh-javascript-c%C6%A1-b%E1%BA%A3n-b%E1%BA%B1ng-node/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 2 - Chạy Chương Trình JavaScript Cơ Bản Bằng Node</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T09:30:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/cbZfmmIlzaU/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 2 - Chạy Chương Trình JavaScript Cơ Bản Bằng Node" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-3-bi%E1%BA%BFn-v%C3%A0-h%E1%BA%B1ng-s%E1%BB%91-n%C6%A1i-l%C6%B0u-tr%E1%BB%AF-d%E1%BB%AF-li%E1%BB%87u/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 3 - Biến và Hằng Số - Nơi Lưu Trữ Dữ Liệu</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T10:00:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/5S2UOHZE5M0/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 3 - Biến và Hằng Số - Nơi Lưu Trữ Dữ Liệu" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-4-kh%E1%BB%9Fi-t%E1%BA%A1o-bi%E1%BA%BFn-v%E1%BB%9Bi-var-v%C3%A0-let-s%E1%BB%B1-kh%C3%A1c-bi%E1%BB%87t-quan-tr%E1%BB%8Dng/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 4 - Khởi Tạo Biến Với var và let - Sự Khác Biệt Quan Trọng</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T10:30:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/kfibc_7N69o/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 4 - Khởi Tạo Biến Với var và let - Sự Khác Biệt Quan Trọng" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-5-to%C3%A1n-t%E1%BB%AD-g%C3%A1n-v%C3%A0-to%C3%A1n-t%E1%BB%AD-so-s%C3%A1nh-ph%C3%A9p-to%C3%A1n-c%C6%A1-b%E1%BA%A3n/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 5 - Toán Tử Gán và Toán Tử So Sánh - Phép Toán Cơ Bản</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T11:00:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/N2QqCxjz-hY/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 5 - Toán Tử Gán và Toán Tử So Sánh - Phép Toán Cơ Bản" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-6-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-s%E1%BB%91-number-l%C3%A0m-ch%E1%BB%A7-s%E1%BB%91-h%E1%BB%8Dc-javascript/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 6 - Kiểu Dữ Liệu Số Number - Làm Chủ Số Học JavaScript</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T11:30:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/bynuI8B2uho/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 6 - Kiểu Dữ Liệu Số Number - Làm Chủ Số Học JavaScript" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-7-kh%C3%A1i-qu%C3%A1t-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-chu%E1%BB%97i-string-x%E1%BB%AD-l%C3%BD-v%C4%83n-b%E1%BA%A3n/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 7 - Khái Quát Kiểu Dữ Liệu Chuỗi (String) - Xử Lý Văn Bản</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T12:00:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/0ABTCy5FbP4/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 7 - Khái Quát Kiểu Dữ Liệu Chuỗi (String) - Xử Lý Văn Bản" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-8-template-literals-number-string-c%C3%B4ng-c%E1%BB%A5-m%E1%BA%A1nh-m%E1%BA%BD-es6/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T12:30:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/hiFBsPtFgOg/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 8 - Template Literals, Number-String - Công Cụ Mạnh Mẽ ES6" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-9-ki%E1%BB%83u-d%E1%BB%AF-li%E1%BB%87u-boolean-logic-%C4%91%C3%BAng/sai-trong-javascript/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 9 - Kiểu Dữ Liệu Boolean - Logic Đúng/Sai Trong JavaScript</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T13:00:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/2Uvl-lJ9fBY/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 9 - Kiểu Dữ Liệu Boolean - Logic Đúng/Sai Trong JavaScript" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+            <article>
+    <a href="/MyPortfolio/p/b%C3%A0i-10-null-v%C3%A0-undefined-hi%E1%BB%83u-r%C3%B5-s%E1%BB%B1-kh%C3%A1c-bi%E1%BB%87t/">
+        <div class="article-details">
+            <h2 class="article-title">Bài 10 - Null và Undefined - Hiểu Rõ Sự Khác Biệt</h2>
+            <footer class="article-time">
+                <time datetime='2025-09-28T13:30:00&#43;07:00'>Sep 28, 2025</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                
+                    <img src="https://img.youtube.com/vi/CeM74bs91Sw/maxresdefault.jpg" loading="lazy" alt="Featured image of post Bài 10 - Null và Undefined - Hiểu Rõ Sự Khác Biệt" />
+                
+            </div>
+        
+    </a>
+</article>
+        
+    </section>
+    <nav class='pagination'>
+        
+        
+
+        
+            
+                <span class='page-link current'>1</span>
+                
+            
+            
+                    <a class='page-link' href='/MyPortfolio/series/javascript-basic/page/2/'>2</a>
+                
+            
+    </nav>
+
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 Woong Ho Tuan Nguyen
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/MyPortfolio/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
